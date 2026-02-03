@@ -1,80 +1,34 @@
-# gui.py
-
 import tkinter as tk
-from tkinter import messagebox, filedialog
-
-import bilder
-import lesen
-import speichern
-
-ausgewaehlte_bilder = []
-checkboxen = {}
-
-def lade_ein_bild(label, frame):
-    global ausgewaehlte_bilder
-
-    pfad = bilder.bild_auswaehlen()
-    if pfad is None:
-        return
-
-    ausgewaehlte_bilder = [pfad]
-    label.config(text=pfad)
-
-    zeige_exif(pfad, frame)
+from tkinter import filedialog
+from main import read_exif_data
 
 
-def lade_ordner(label, frame):
-    global ausgewaehlte_bilder
-
-    liste = bilder.ordner_auswaehlen()
-    if len(liste) == 0:
-        return
-
-    ausgewaehlte_bilder = liste
-    label.config(text=f"{len(liste)} Bilder ausgewählt")
-
-    # EXIF vom ersten Bild für Checkboxen
-    zeige_exif(liste[0], frame)
-
-
-def zeige_exif(beispiel_bild, frame):
-    global checkboxen
-
-    for w in frame.winfo_children():
-        w.destroy()
-
-    checkboxen = {}
-
-    daten = lesen.hole_exif(beispiel_bild)
-
-    for tag in daten:
-        var = tk.BooleanVar()
-        cb = tk.Checkbutton(frame, text=tag, variable=var)
-        cb.pack(anchor="w")
-        checkboxen[tag] = var
-
-
-def csv_export():
-    global ausgewaehlte_bilder
-
-    auswahl = []
-
-    for tag, var in checkboxen.items():
-        if var.get():
-            auswahl.append(tag)
-
-    if len(auswahl) == 0:
-        messagebox.showwarning("Fehler", "Keine EXIF-Felder gewählt.")
-        return
-
-    pfad = filedialog.asksaveasfilename(
-        defaultextension=".csv",
-        filetypes=[("CSV Datei", "*.csv")]
+def open_image():
+    file_path = filedialog.askopenfilename(
+        filetypes=[("Images", "*.jpg *.jpeg *.png *.tiff")]
     )
 
-    if pfad == "":
+    if not file_path:
         return
 
-    speichern.speichere_csv(ausgewaehlte_bilder, auswahl, pfad)
+    exif_data = read_exif_data(file_path)
 
-    messagebox.showinfo("OK", "CSV gespeichert!")
+    output.delete("1.0", tk.END)
+
+    for key, value in exif_data.items():
+        output.insert(tk.END, f"{key}: {value}\n")
+
+
+window = tk.Tk()
+
+output = tk.Text(window, width=80, height=25)
+output.pack()
+
+button = tk.Button(
+    window,
+    text="Open image",
+    command=open_image
+)
+button.pack()
+
+window.mainloop()

@@ -1,37 +1,17 @@
-from PIL import Image
-from PIL.ExifTags import TAGS
+from PIL import Image, ExifTags
 
-image_path = '/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/_DSC7819.jpg'
-image = Image.open(image_path)
+def read_exif_data(image_path):
+    img = Image.open(image_path)
+    img_exif = img.getexif()
 
-# EXIF laden
-exifdata = image.getexif()
+    if not img_exif:
+        return {}
 
-# Liste der gewünschten EXIF-Tags
-desired_tags = [
-    "Make",
-    "Model",
-    "DateTime",
-    "ExposureTime",
-    "FNumber",
-    "ISOSpeedRatings",
-    "FocalLength"
-]
+    exif_data = {}
 
-filtered_exif = {}
 
-for tag_id in exifdata:
-    tag = TAGS.get(tag_id, tag_id)
-    if tag in desired_tags:
-        data = exifdata.get(tag_id)
+    for key, val in img_exif.items():
+        tag = ExifTags.TAGS.get(key, key)
+        exif_data[tag] = val
 
-        # Bytes decodieren
-        if isinstance(data, bytes):
-            try:
-                data = data.decode()
-            except:
-                data = str(data)
-
-        filtered_exif[tag] = data
-
-print(filtered_exif)
+    return exif_data
