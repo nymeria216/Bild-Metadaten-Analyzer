@@ -1,4 +1,4 @@
-from utils import starte_app
+from metadaten import starte_app
 
 
 if __name__ == "__main__":
