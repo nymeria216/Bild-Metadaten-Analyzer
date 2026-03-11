@@ -3,7 +3,7 @@ import json
 
 
 def export_to_csv(metadata, output_path):
-    with open(output_path, "w", newline="", encoding="utf-8") as file:
+    with open(output_path, "w", newline="", encoding="utf-8-sig") as file:
         writer = csv.writer(file, delimiter=";")
 
         writer.writerow(["Feld", "Wert"])
@@ -17,5 +17,5 @@ def export_to_csv(metadata, output_path):
 
 
 def export_to_json(metadata, output_path):
-    with open(output_path, "w", encoding="utf-8") as file:
+    with open(output_path, "w", encoding="utf-8-sig") as file:
         json.dump(metadata, file, indent=4, ensure_ascii=False)
