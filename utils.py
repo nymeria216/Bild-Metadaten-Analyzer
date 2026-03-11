@@ -2,71 +2,75 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 from pathlib import Path
 
-from reader import read_image_metadata
-from export import export_to_csv, export_to_json
+from reader import bild_metadaten_auslesen
+from export import als_csv_exportieren, als_json_exportieren
+
+aktuelle_metadaten = None
+aktueller_dateipfad = None
 
 
-current_metadata = None
-current_file_path = None
+# Prüft, ob die ausgewählte Datei ein unterstütztes Bildformat hat
+def datei_wird_unterstuetzt(dateipfad):
+    dateipfad = dateipfad.lower()
 
-
-def is_supported_file(file_path):
-    file_path = file_path.lower()
-
-    if file_path.endswith(".jpg"):
+    if dateipfad.endswith(".jpg"):
         return True
-    if file_path.endswith(".jpeg"):
+    if dateipfad.endswith(".jpeg"):
         return True
-    if file_path.endswith(".png"):
+    if dateipfad.endswith(".png"):
         return True
-    if file_path.endswith(".tif"):
+    if dateipfad.endswith(".tif"):
         return True
-    if file_path.endswith(".tiff"):
+    if dateipfad.endswith(".tiff"):
         return True
 
     return False
 
 
-def format_metadata_text(metadata):
+# Formatiert die Metadaten so, dass sie im Textfeld angezeigt werden können
+def metadaten_text_formatieren(metadaten):
     text = ""
-    text += "Datei: " + str(metadata["datei"]) + "\n"
-    text += "Format: " + str(metadata["format"]) + "\n"
-    text += "Bildgröße: " + str(metadata["groesse"]) + "\n"
+    text += "Datei: " + str(metadaten["datei"]) + "\n"
+    text += "Format: " + str(metadaten["format"]) + "\n"
+    text += "Bildgröße: " + str(metadaten["groesse"]) + "\n"
     text += "\n"
 
-    if metadata["has_exif"] is False:
+    if metadaten["has_exif"] is False:
         text += "Keine EXIF-Daten vorhanden."
         return text
 
     text += "EXIF-Daten:\n\n"
 
-    for key in metadata["exif"]:
-        text += str(key) + ": " + str(metadata["exif"][key]) + "\n"
+    for schluessel in metadaten["exif"]:
+        text += str(schluessel) + ": " + str(metadaten["exif"][schluessel]) + "\n"
 
     return text
 
 
-def get_downloads_path():
+# Gibt den Pfad zum Downloads-Ordner zurück
+def downloads_ordner_ermitteln():
     return Path.home() / "Downloads"
 
 
-def get_output_file_path(extension):
-    global current_file_path
+# Erstellt automatisch den Dateinamen für den Export
+def ausgabe_dateipfad_ermitteln(endung):
+    global aktueller_dateipfad
 
-    if current_file_path is None:
+    if aktueller_dateipfad is None:
         return None
 
-    original_name = Path(current_file_path).stem
-    file_name = original_name + "_Metadata_Auswertung" + extension
+    original_name = Path(aktueller_dateipfad).stem
+    dateiname = original_name + "_Metadata_Auswertung" + endung
 
-    return get_downloads_path() / file_name
+    return downloads_ordner_ermitteln() / dateiname
 
 
-def open_file(text_box):
-    global current_metadata
-    global current_file_path
+# Öffnet eine Bilddatei und liest die Metadaten aus
+def bild_oeffnen(text_feld):
+    global aktuelle_metadaten
+    global aktueller_dateipfad
 
-    file_path = filedialog.askopenfilename(
+    dateipfad = filedialog.askopenfilename(
         title="Bild auswählen",
         filetypes=[
             ("Bilddateien", "*.jpg *.jpeg *.png *.tif *.tiff"),
@@ -74,94 +78,97 @@ def open_file(text_box):
         ]
     )
 
-    if file_path == "":
+    if dateipfad == "":
         return
 
-    if not is_supported_file(file_path):
+    if not datei_wird_unterstuetzt(dateipfad):
         messagebox.showerror("Fehler", "Dateiformat wird nicht unterstützt.")
         return
 
     try:
-        current_file_path = file_path
-        current_metadata = read_image_metadata(file_path)
+        aktueller_dateipfad = dateipfad
+        aktuelle_metadaten = bild_metadaten_auslesen(dateipfad)
 
-        text_box.delete("1.0", tk.END)
-        text_box.insert(tk.END, format_metadata_text(current_metadata))
+        text_feld.delete("1.0", tk.END)
+        text_feld.insert(tk.END, metadaten_text_formatieren(aktuelle_metadaten))
 
-        if current_metadata["has_exif"] is False:
+        if aktuelle_metadaten["has_exif"] is False:
             messagebox.showinfo("Hinweis", "Keine EXIF-Daten vorhanden.")
-    except Exception as e:
-        messagebox.showerror("Fehler", "Datei konnte nicht gelesen werden.\n" + str(e))
+    except Exception as fehler:
+        messagebox.showerror("Fehler", "Datei konnte nicht gelesen werden.\n" + str(fehler))
 
 
-def save_csv():
-    global current_metadata
+# Speichert die Metadaten als CSV-Datei im Downloads-Ordner
+def csv_speichern():
+    global aktuelle_metadaten
 
-    if current_metadata is None:
+    if aktuelle_metadaten is None:
         messagebox.showwarning("Hinweis", "Bitte zuerst ein Bild auswählen.")
         return
 
-    output_path = get_output_file_path(".csv")
+    ausgabe_pfad = ausgabe_dateipfad_ermitteln(".csv")
 
     try:
-        export_to_csv(current_metadata, output_path)
+        als_csv_exportieren(aktuelle_metadaten, ausgabe_pfad)
         messagebox.showinfo(
             "Erfolg",
-            "CSV-Datei wurde gespeichert:\n" + str(output_path)
+            "CSV-Datei wurde gespeichert:\n" + str(ausgabe_pfad)
         )
-    except Exception as e:
-        messagebox.showerror("Fehler", "CSV konnte nicht gespeichert werden.\n" + str(e))
+    except Exception as fehler:
+        messagebox.showerror("Fehler", "CSV konnte nicht gespeichert werden.\n" + str(fehler))
 
 
-def save_json():
-    global current_metadata
+# Speichert die Metadaten als JSON-Datei im Downloads-Ordner
+def json_speichern():
+    global aktuelle_metadaten
 
-    if current_metadata is None:
+    if aktuelle_metadaten is None:
         messagebox.showwarning("Hinweis", "Bitte zuerst ein Bild auswählen.")
         return
 
-    output_path = get_output_file_path(".json")
+    ausgabe_pfad = ausgabe_dateipfad_ermitteln(".json")
 
     try:
-        export_to_json(current_metadata, output_path)
+        als_json_exportieren(aktuelle_metadaten, ausgabe_pfad)
         messagebox.showinfo(
             "Erfolg",
-            "JSON-Datei wurde gespeichert:\n" + str(output_path)
+            "JSON-Datei wurde gespeichert:\n" + str(ausgabe_pfad)
         )
-    except Exception as e:
-        messagebox.showerror("Fehler", "JSON konnte nicht gespeichert werden.\n" + str(e))
+    except Exception as fehler:
+        messagebox.showerror("Fehler", "JSON konnte nicht gespeichert werden.\n" + str(fehler))
 
 
-def start_app():
+# Startet die grafische Oberfläche
+def starte_app():
     root = tk.Tk()
     root.title("Analyse Tool von Bild-Metadaten")
     root.geometry("700x500")
 
-    title_label = tk.Label(
+    ueberschrift_label = tk.Label(
         root,
         text="Analyse Tool von Bild-Metadaten",
         font=("Arial", 14, "bold")
     )
-    title_label.pack(pady=10)
+    ueberschrift_label.pack(pady=10)
 
     button_frame = tk.Frame(root)
     button_frame.pack(pady=5)
 
-    text_box = tk.Text(root, wrap="word")
-    text_box.pack(fill="both", expand=True, padx=10, pady=10)
+    text_feld = tk.Text(root, wrap="word")
+    text_feld.pack(fill="both", expand=True, padx=10, pady=10)
 
-    open_button = tk.Button(
+    bild_button = tk.Button(
         button_frame,
         text="Bild auswählen",
-        command=lambda: open_file(text_box),
+        command=lambda: bild_oeffnen(text_feld),
         width=18
     )
-    open_button.grid(row=0, column=0, padx=5)
+    bild_button.grid(row=0, column=0, padx=5)
 
     csv_button = tk.Button(
         button_frame,
         text="Als CSV speichern",
-        command=save_csv,
+        command=csv_speichern,
         width=18
     )
     csv_button.grid(row=0, column=1, padx=5)
@@ -169,7 +176,7 @@ def start_app():
     json_button = tk.Button(
         button_frame,
         text="Als JSON speichern",
-        command=save_json,
+        command=json_speichern,
         width=18
     )
     json_button.grid(row=0, column=2, padx=5)
