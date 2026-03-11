@@ -1,5 +1,5 @@
-from utils import start_app
+from utils import starte_app
 
 
 if __name__ == "__main__":
-    start_app()
+    starte_app()
