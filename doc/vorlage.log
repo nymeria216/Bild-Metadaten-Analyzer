@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  11 MAR 2026 22:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  13 MAR 2026 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/vorlage.tex
-(/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/vorlage.tex
+**/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex
+(/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (./Bild-Metadaten-Analyzer.cls
 Document Class: Bild-Metadaten-Analyzer 2020/07/02 Prüfungsvorlage Schildbach Stefan
@@ -953,7 +953,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip113
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 88.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
 Package: scrlayer-scrpage 2022/10/12 v3.38 KOMA-Script package (end user interface for scrlayer)
  (/usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlayer.sty
@@ -962,51 +962,72 @@ Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2176
 )
 Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 (scrlayer-scrpage)             alias to `pageheadfoot' on input line 1089.
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count472
+\lst@gtempboxa=\box107
+\lst@token=\toks33
+\lst@length=\count473
+\lst@currlwidth=\dimen272
+\lst@column=\count474
+\lst@pos=\count475
+\lst@lostspace=\dimen273
+\lst@width=\dimen274
+\lst@newlines=\count476
+\lst@lineno=\count477
+\lst@maxwidth=\dimen275
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count478
+\lst@skipnumbers=\count479
+\lst@framebox=\box108
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 48.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./vorlage.aux)
-\openout1 = `vorlage.aux'.
+) (./Vorlage.aux)
+\openout1 = `Vorlage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-Package nag Info: Command \frontmatter not defined, skipping amendment on input line 48.
-Package nag Info: Command \mainmatter not defined, skipping amendment on input line 48.
-Package nag Info: Command \backmatter not defined, skipping amendment on input line 48.
-LaTeX Info: Redefining \microtypecontext on input line 48.
-Package microtype Info: Applying patch `item' on input line 48.
-Package microtype Info: Applying patch `toc' on input line 48.
-Package microtype Info: Applying patch `eqnum' on input line 48.
-Package microtype Info: Applying patch `footnote' on input line 48.
-Package microtype Info: Applying patch `verbatim' on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+Package nag Info: Command \frontmatter not defined, skipping amendment on input line 71.
+Package nag Info: Command \mainmatter not defined, skipping amendment on input line 71.
+Package nag Info: Command \backmatter not defined, skipping amendment on input line 71.
+LaTeX Info: Redefining \microtypecontext on input line 71.
+Package microtype Info: Applying patch `item' on input line 71.
+Package microtype Info: Applying patch `toc' on input line 71.
+Package microtype Info: Applying patch `eqnum' on input line 71.
+Package microtype Info: Applying patch `footnote' on input line 71.
+Package microtype Info: Applying patch `verbatim' on input line 71.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 48.
+LaTeX Info: Redefining \showhyphens on input line 71.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1036,13 +1057,13 @@ File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `vorlage.bcf'.
+\openout3 = `Vorlage.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'vorlage.bbl' found.
- (./vorlage.bbl)
-Package biblatex Info: Reference section=0 on input line 48.
-Package biblatex Info: Reference segment=0 on input line 48.
+Package biblatex Info: ... file 'Vorlage.bbl' found.
+ (./Vorlage.bbl)
+Package biblatex Info: Reference section=0 on input line 71.
+Package biblatex Info: Reference segment=0 on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1080,36 +1101,31 @@ Package biblatex Info: Reference segment=0 on input line 48.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count472
-\scratchdimen=\dimen272
-\scratchbox=\box107
-\nofMPsegments=\count473
-\nofMParguments=\count474
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count475
-\MPscratchDim=\dimen273
-\MPnumerator=\count476
-\makeMPintoPDFobject=\count477
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count480
+\scratchdimen=\dimen276
+\scratchbox=\box109
+\nofMPsegments=\count481
+\nofMParguments=\count482
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count483
+\MPscratchDim=\dimen277
+\MPnumerator=\count484
+\makeMPintoPDFobject=\count485
+\everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/local/texlive/2023/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 48.
- (./vorlage.out) (./vorlage.out)
+Package hyperref Info: Link coloring ON on input line 71.
+ (./Vorlage.out) (./Vorlage.out)
 \@outlinefile=\write4
-\openout4 = `vorlage.out'.
+\openout4 = `Vorlage.out'.
 
 Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           Using `bookmark' together with `hyperref' is recommended,
@@ -1118,48 +1134,48 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 48.
+(scrartcl)           before \begin{document} on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count478
+\BKM@id=\count486
 ))
-Package hyperref Info: Option `pageanchor' set `false' on input line 48.
+Package hyperref Info: Option `pageanchor' set `false' on input line 71.
 <hsmwLogo.pdf, id=4, 356.59496pt x 112.92188pt>
 File: hsmwLogo.pdf Graphic file (type pdf)
 <use hsmwLogo.pdf>
-Package pdftex.def Info: hsmwLogo.pdf  used on input line 48.
+Package pdftex.def Info: hsmwLogo.pdf  used on input line 71.
 (pdftex.def)             Requested size: 159.33821pt x 50.45596pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 48.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 48.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 48.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 48.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 48.
+(Font)              <10.95> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 48.
+(Font)              <8> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 48.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
+(Font)              <6> on input line 71.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1167,8 +1183,8 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./hsmwLogo.pdf>]
-Package hyperref Info: Option `pageanchor' set `true' on input line 48.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 48.
+Package hyperref Info: Option `pageanchor' set `true' on input line 71.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 71.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1176,46 +1192,47 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package tocbasic Info: character protrusion at toc deactivated on input line 48.
- (./vorlage.toc)
+Package tocbasic Info: character protrusion at toc deactivated on input line 71.
+ (./Vorlage.toc)
 \tf@toc=\write5
-\openout5 = `vorlage.toc'.
+\openout5 = `Vorlage.toc'.
 
  [1
 
 ]
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 48.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 48.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 54.
+\c@lstlisting=\count487
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 71.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 71.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 85.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [1
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [2]
 
-LaTeX Warning: Empty bibliography on input line 103.
+LaTeX Warning: Empty bibliography on input line 143.
 
 No complaints by nag.
-(./vorlage.aux)
-Package rerunfilecheck Info: File `vorlage.out' has not changed.
+(./Vorlage.aux)
+Package rerunfilecheck Info: File `Vorlage.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'vorlage.run.xml'.
-\openout1 = `vorlage.run.xml'.
+Package logreq Info: Writing requests to 'Vorlage.run.xml'.
+\openout1 = `Vorlage.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29897 strings out of 476025
- 568838 string characters out of 5790017
- 1861388 words of memory out of 5000000
- 49848 multiletter control sequences out of 15000+600000
- 554409 words of font info for 86 fonts, out of 8000000 for 9000
+ 31253 strings out of 476025
+ 588357 string characters out of 5790017
+ 1862388 words of memory out of 5000000
+ 51177 multiletter control sequences out of 15000+600000
+ 559311 words of font info for 93 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  122i,19n,120p,10696b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on vorlage.pdf (4 pages, 123504 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on Vorlage.pdf (4 pages, 146018 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 26710 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
+ 21 named destinations out of 1000 (max. 500000)
+ 28806 words of extra memory for PDF output out of 29859 (max. 10000000)
 

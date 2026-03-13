@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>vorlage.bcf</file>
+      <file>Vorlage.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>vorlage.bbl</file>
+      <file>Vorlage.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -70,19 +70,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>vorlage</infile>
+      <infile>Vorlage</infile>
     </cmdline>
     <input>
-      <file>vorlage.bcf</file>
+      <file>Vorlage.bcf</file>
     </input>
     <output>
-      <file>vorlage.bbl</file>
+      <file>Vorlage.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>vorlage.bbl</file>
+      <file>Vorlage.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>vorlage.bcf</file>
+      <file>Vorlage.bcf</file>
     </requires>
     <requires type="editable">
       <file>literatur.bib</file>
