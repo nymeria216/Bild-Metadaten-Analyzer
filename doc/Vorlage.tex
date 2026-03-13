@@ -40,9 +40,10 @@
 
 % Verwendete Literatur bitte in diese Datei eintragen
 \addbibresource{literatur.bib} % Name der Literatur-Datei
+\usepackage[backend=biber,style=ieee]{biblatex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Pakete
+% Code-Formatierung
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{listings}
@@ -79,32 +80,56 @@ werden die Kriterien und Anforderungen an das Programm beschrieben. Im \nameref{
 \Ref{sec:Ziel des Programms} werden die Programminhalte näher betrachtet.
 
 \section{Aufgabenstellung}\label{sec:Aufgabenstellung}
-Das Programm sollte ... \\
-\\... in der Programmiersprache Python geschrieben sein.
-\\... mit einer Schnittstelle (GUI oder CLI) ausgestattet sein.
-\\... Inhalte verarbeiten und ausgeben können.
-\\... sich erfolgreich implementieren und kompilieren lassen.
-\\... plattformübergreifend laufend sein (Windows und Linux).
-\\... ohne kostenpflichtige Software oder Bibliothekne auskommen.
-\\... Quellcode mit beschreibenden Kommentaren enthalten.
-\\... gegebenenfalls Dateien enthalten, die zu Testzwecken genutzt werden können.\\
+Das Programm sollte \ldots \\
+\\\ldots in der Programmiersprache Python geschrieben sein.
+\\\ldots mit einer Schnittstelle (GUI oder CLI) ausgestattet sein.
+\\\ldots Inhalte verarbeiten und ausgeben können.
+\\\ldots sich erfolgreich implementieren und kompilieren lassen.
+\\\ldots plattformübergreifend laufend sein (Windows und Linux).
+\\\ldots ohne kostenpflichtige Software oder Bibliothekne auskommen.
+\\\ldots Quellcode mit beschreibenden Kommentaren enthalten.
+\\\ldots gegebenenfalls Dateien enthalten, die zu Testzwecken genutzt werden können.\\
 \\ Durch die freie Themenwahl gab es eine Vielzahl an Möglichkeiten, passende Programme zu erstellen. Damit dieses einen Bezug zum 
 Studiengang hat, sollte es IT-forensische Inhalte beinhalten. So wurde sich für das Programm \textit{Bild-Metadaten-Analyzer} 
 entschieden, das die Metadaten von Bildern analysieren und ausgeben kann. Es soll dabei helfen, Informationen über die Bilder zu 
 erhalten, die für die IT-Forensik relevant sein können.
 
 \section{Ziel des Programms}\label{sec:Ziel des Programms}
-
-\begin{itemize}
-	\item 
-	\item 
-	\item
-	\item 
-\end{itemize}
+Damit das Programm \textit{Bild-Metadaten-Analyzer} neben den Anforderungen aus der \nameref{sec:Aufgabenstellung} erfolgreich läuft,
+sind weitere Kriterien festegelegt worden.
+\\Unter anderem soll es \ldots\\
+\\\ldots eine forensische Analyse von Bilddateien (*.jpeg, *.jpg, *.png) durchführen können.
+\\\ldots die ausgelesenen Metadaten bzw. EXIF-Daten übersichtlich darstellen können.
+\\\ldots über eine graphische Oberfläche (GUI), als benutzerfreundliche Schnittstelle, erreichbar sein.
+\\\ldots die gefundenen Metadaten in einer \textit{*.csv-Datei} oder in einer \textit{*.json-Datei} extrahieren können.\\
+\\EXIF-Daten sind Metadaten, die in Bilddateien enthalten sind. EXIF ist ein Akronym und steht für Exchangeable Image File Format.
+``Dieses Dateiformat ist ein Standardformat und wird zum Speichern von Metadaten in digitalen Bildern verwendet. 
+Diese Metadaten enthalten Informationen über das Bild, etwa die Einstellungen der Kamera wie Belichtungszeit, Blende und ISO-Wert. 
+Aber auch Daten wie Datum, Uhrzeit und verwendete Kamera bei der Aufnahme. Wenn die Kamera mit einem GPS-System ausgestattet ist, 
+können sogar die geografische Daten in den EXIF-Daten gespeichert sein.`` \cite{Onlinequelle:1}
+\subsubsection{EXIF-Inhalte}\label{subsubsec:EXIF-Inhalte}
+Wie in der Definition zu EXIF-Daten aus der Quelle \cite[E. M. Zylinski. „Was sind EXIF-Daten?“]{Onlinequelle:1}, werden in dem 
+Programm \textit{Bild-Metadaten-Analyzer} die folgenden EXIF-Inhalte ausgelesen und dargestellt \ldots
+\\\ldots Dateipfad mit Dateinamen,
+\\\ldots Dateigröße,
+\\\ldots Aufnahmedatum und -uhrzeit,
+\\\ldots Kamerahersteller,
+\\\ldots Kameramodell,
+\\\ldots Objektiv,
+\\\ldots Software,
+\\\ldots Blende,
+\\\ldots Belichtungszeit,
+\\\ldots ISO-Wert,
+\\\ldots Brennweite,
+\\\ldots GPS-Daten.\\
+\\Wenn EXIF-Daten nicht vorhanden sind, soll eine spezifische Fehlermeldung bzw. Information ausgegeben werden, sodass der Nutzer informiert ist, dass für 
+das Bild keine EXIF-Daten vorliegen.
 
 \subsection{Einsatzzweck}\label{subsec:Einsatzzweck}
-
-dummytext
+Der sogenannte \textit{Bild-Metadaten-Analyzer} kann in der IT-Forensik von Nutzung sein, um Ermittlern der Polizei oder weiteren nachrichtendienstlichen 
+Behörden Informationen über Bilder zu liefern, die in einem Ermittlungsverfahren von Relevanz sein könnten.
+\\Ein Anwendungsbeispiel hierbei wären Bilder, die einen Zeitstempel mit GPS-Daten enthalten. Solche könnten unterstützend wirken, 
+um potentielle Täter oder Opfer eines Tatortes leichter zu identifizieren.
 
 \section{Anleitungen}\label{sec:Anleitungen}
 
@@ -143,6 +168,7 @@ dummytext
 
 \subsection{Technische Herausforderungen}\label{subsec:Technische Herausforderungen}
 
-dummytext
+\subsection{Weitere Features}\label{subsec:WeitereFeatures}
+Überprüfung, ob die EXIF-Inhalte verändert worden sind
 
 \end{document}

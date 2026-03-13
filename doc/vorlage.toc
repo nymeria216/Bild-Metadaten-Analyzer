@@ -3,17 +3,20 @@
 \contentsline {section}{\numberline {1}Einleitung}{1}{section.1}%
 \contentsline {section}{\numberline {2}Aufgabenstellung}{1}{section.2}%
 \contentsline {section}{\numberline {3}Ziel des Programms}{1}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Einsatzzweck}{1}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.0.1}EXIF-Inhalte}{2}{subsubsection.3.0.1}%
+\contentsline {subsection}{\numberline {3.1}Einsatzzweck}{2}{subsection.3.1}%
 \contentsline {section}{\numberline {4}Anleitungen}{2}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Installationsanleitung}{2}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Konfigurationsanleitung}{2}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Bedienungsanleitung}{2}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Programmaufbau}{2}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Vorstellung Quellcode-Dateien}{2}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Software-Architektur}{2}{subsubsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.2}Funktionsumfang}{2}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Programmablauf}{2}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Fazit}{2}{section.6}%
+\contentsline {section}{\numberline {5}Programmaufbau}{3}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Vorstellung Quellcode-Dateien}{3}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Software-Architektur}{3}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}Funktionsumfang}{3}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Programmablauf}{3}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Fazit}{3}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Verwendete Hilfsmittel}{3}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Technische Herausforderungen}{3}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Weitere Features}{3}{subsection.6.3}%
+\contentsline {section}{\nonumberline Literatur}{I}{section*.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

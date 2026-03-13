@@ -16,5 +16,44 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Onlinequelle:1}{online}{}
+      \name{author}{1}{}{%
+        {{hash=97af3923cab5c2a574214a341ad9db98}{%
+           family={Zylinski},
+           familyi={Z\bibinitperiod},
+           given={Ellen\bibnamedelima Marie},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{97af3923cab5c2a574214a341ad9db98}
+      \strng{fullhash}{97af3923cab5c2a574214a341ad9db98}
+      \strng{bibnamehash}{97af3923cab5c2a574214a341ad9db98}
+      \strng{authorbibnamehash}{97af3923cab5c2a574214a341ad9db98}
+      \strng{authornamehash}{97af3923cab5c2a574214a341ad9db98}
+      \strng{authorfullhash}{97af3923cab5c2a574214a341ad9db98}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{month}{7}
+      \field{title}{Was sind EXIF-Daten?}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.heise.de/tipps-tricks/Was-sind-EXIF-Daten-9213830.html#top
+      \endverb
+      \verb{url}
+      \verb https://www.heise.de/tipps-tricks/Was-sind-EXIF-Daten-9213830.html#top
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

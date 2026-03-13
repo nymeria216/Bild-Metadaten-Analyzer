@@ -1134,6 +1134,7 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrkbase.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlfile.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlogo.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/koma-script/scrlogo.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
@@ -1306,13 +1307,18 @@ INPUT Vorlage.toc
 INPUT Vorlage.toc
 OUTPUT Vorlage.toc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmri10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ts1-lmr10.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/lm/ec-lmtt10.tfm
 INPUT Vorlage.aux
 INPUT ./Vorlage.out
 INPUT ./Vorlage.out
@@ -1323,3 +1329,4 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
