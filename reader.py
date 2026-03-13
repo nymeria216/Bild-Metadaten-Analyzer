@@ -1,52 +1,92 @@
 from PIL import Image, ExifTags
 
 
-# wandelt GPS-Koordinaten von Grad/Minuten/Sekunden in Dezimalgrad um.
+def wert_zu_float(wert):
+    try:
+        return float(wert)
+    except:
+        try:
+            return float(wert[0]) / float(wert[1])
+        except:
+            return None
+
+
+def bruch_als_text(wert):
+    try:
+        if hasattr(wert, "numerator") and hasattr(wert, "denominator"):
+            return str(wert.numerator) + "/" + str(wert.denominator)
+
+        if isinstance(wert, tuple) and len(wert) == 2:
+            return str(wert[0]) + "/" + str(wert[1])
+
+        return str(wert)
+    except:
+        return str(wert)
+
+
 def grad_umrechnen(wert):
-    grad = float(wert[0])
-    minuten = float(wert[1])
-    sekunden = float(wert[2])
+    if len(wert) < 3:
+        return None
+
+    grad = wert_zu_float(wert[0])
+    minuten = wert_zu_float(wert[1])
+    sekunden = wert_zu_float(wert[2])
+
+    if grad is None or minuten is None or sekunden is None:
+        return None
 
     return grad + (minuten / 60.0) + (sekunden / 3600.0)
 
 
-# liest die GPS-Daten aus den EXIF-Daten aus
 def gps_daten_auslesen(exif_daten):
-
     breitengrad = None
     laengengrad = None
+
+    gps_ifd = None
 
     try:
         gps_ifd = exif_daten.get_ifd(ExifTags.IFD.GPSInfo)
     except:
-        return None, None
+        gps_ifd = None
+
+    if not gps_ifd:
+        for tag_id in exif_daten:
+            tag_name = ExifTags.TAGS.get(tag_id, tag_id)
+            if tag_name == "GPSInfo":
+                gps_ifd = exif_daten.get(tag_id)
+                break
 
     if not gps_ifd:
         return None, None
 
     gps_daten = {}
 
-    # GPS-Tags in verständliche Namen umwandeln
     for schluessel in gps_ifd:
         name = ExifTags.GPSTAGS.get(schluessel, schluessel)
         gps_daten[name] = gps_ifd[schluessel]
 
-    # Breitengrad berechnen
     if "GPSLatitude" in gps_daten and "GPSLatitudeRef" in gps_daten:
         try:
             breitengrad = grad_umrechnen(gps_daten["GPSLatitude"])
+            referenz = gps_daten["GPSLatitudeRef"]
 
-            if gps_daten["GPSLatitudeRef"] != "N":
+            if isinstance(referenz, bytes):
+                referenz = referenz.decode(errors="ignore")
+
+            if referenz != "N":
                 breitengrad = -breitengrad
         except:
             breitengrad = None
 
-    # Längengrad berechnen
     if "GPSLongitude" in gps_daten and "GPSLongitudeRef" in gps_daten:
         try:
             laengengrad = grad_umrechnen(gps_daten["GPSLongitude"])
+            referenz = gps_daten["GPSLongitudeRef"]
 
-            if gps_daten["GPSLongitudeRef"] != "E":
+            if isinstance(referenz, bytes):
+                referenz = referenz.decode(errors="ignore")
+
+            if referenz != "E":
                 laengengrad = -laengengrad
         except:
             laengengrad = None
@@ -54,19 +94,14 @@ def gps_daten_auslesen(exif_daten):
     return breitengrad, laengengrad
 
 
-# Hauptfunktion zum Auslesen der Bild-Metadaten
 def bild_metadaten_auslesen(dateipfad):
-
     metadaten = {}
 
-    # Allgemeine Bildinformationen
     metadaten["datei"] = dateipfad
-    metadaten["format"] = "Nicht vorhanden"
     metadaten["groesse"] = "Nicht vorhanden"
     metadaten["has_exif"] = False
     metadaten["exif"] = {}
 
-    # Standardwerte setzen
     metadaten["exif"]["Aufnahmedatum"] = "Nicht vorhanden"
     metadaten["exif"]["Hersteller"] = "Nicht vorhanden"
     metadaten["exif"]["Modell"] = "Nicht vorhanden"
@@ -76,13 +111,11 @@ def bild_metadaten_auslesen(dateipfad):
     metadaten["exif"]["Belichtungszeit"] = "Nicht vorhanden"
     metadaten["exif"]["ISO"] = "Nicht vorhanden"
     metadaten["exif"]["Brennweite"] = "Nicht vorhanden"
-    metadaten["exif"]["GPSLatitude"] = "Nicht vorhanden"
-    metadaten["exif"]["GPSLongitude"] = "Nicht vorhanden"
+    metadaten["exif"]["GPS Breitengrad"] = "Nicht vorhanden"
+    metadaten["exif"]["GPS Längengrad"] = "Nicht vorhanden"
 
     bild = Image.open(dateipfad)
 
-    # Bildformat und Größe bestimmen
-    metadaten["format"] = str(bild.format)
     metadaten["groesse"] = str(bild.size[0]) + " x " + str(bild.size[1])
 
     exif_daten = bild.getexif()
@@ -90,7 +123,6 @@ def bild_metadaten_auslesen(dateipfad):
     if exif_daten:
         exif_gefunden = False
 
-        # Normale EXIF-Daten durchsuchen
         for tag_id in exif_daten:
             tag_name = ExifTags.TAGS.get(tag_id, tag_id)
             wert = exif_daten.get(tag_id)
@@ -115,7 +147,6 @@ def bild_metadaten_auslesen(dateipfad):
                 metadaten["exif"]["Software"] = str(wert)
                 exif_gefunden = True
 
-        # Erweiterte Kameraeinstellungen auslesen
         try:
             exif_ifd = exif_daten.get_ifd(ExifTags.IFD.Exif)
         except:
@@ -131,11 +162,17 @@ def bild_metadaten_auslesen(dateipfad):
                     exif_gefunden = True
 
                 elif tag_name == "FNumber":
-                    metadaten["exif"]["Blende"] = str(wert)
+                    blende = wert_zu_float(wert)
+                    if blende is not None:
+                        metadaten["exif"]["Blende"] = "f/" + str(round(blende, 2))
                     exif_gefunden = True
 
                 elif tag_name == "ExposureTime":
-                    metadaten["exif"]["Belichtungszeit"] = str(wert)
+                    belichtungszeit = wert_zu_float(wert)
+                    if belichtungszeit is not None:
+                        metadaten["exif"]["Belichtungszeit"] = str(round(belichtungszeit, 6)) + " s"
+                    else:
+                        metadaten["exif"]["Belichtungszeit"] = bruch_als_text(wert) + " s"
                     exif_gefunden = True
 
                 elif tag_name == "ISOSpeedRatings":
@@ -147,17 +184,18 @@ def bild_metadaten_auslesen(dateipfad):
                     exif_gefunden = True
 
                 elif tag_name == "FocalLength":
-                    metadaten["exif"]["Brennweite"] = str(wert)
+                    brennweite = wert_zu_float(wert)
+                    if brennweite is not None:
+                        metadaten["exif"]["Brennweite"] = str(round(brennweite, 2)) + " mm"
                     exif_gefunden = True
 
-        # GPS-Daten auslesen
         breitengrad, laengengrad = gps_daten_auslesen(exif_daten)
 
         if breitengrad is not None:
-            metadaten["exif"]["GPSLatitude"] = breitengrad
+            metadaten["exif"]["GPS Breitengrad"] = str(round(breitengrad, 6))
 
         if laengengrad is not None:
-            metadaten["exif"]["GPSLongitude"] = laengengrad
+            metadaten["exif"]["GPS Längengrad"] = str(round(laengengrad, 6))
 
         if exif_gefunden:
             metadaten["has_exif"] = True

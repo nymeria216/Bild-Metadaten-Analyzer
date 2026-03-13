@@ -31,7 +31,6 @@ def datei_wird_unterstuetzt(dateipfad):
 def metadaten_text_formatieren(metadaten):
     text = ""
     text += "Datei: " + str(metadaten["datei"]) + "\n"
-    text += "Format: " + str(metadaten["format"]) + "\n"
     text += "Bildgröße: " + str(metadaten["groesse"]) + "\n"
     text += "\n"
 
