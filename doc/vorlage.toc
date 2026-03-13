@@ -18,9 +18,8 @@
 \contentsline {subsubsection}{\numberline {5.1.4}reader.py}{11}{subsubsection.5.1.4}%
 \contentsline {subsection}{\numberline {5.2}Programmablauf}{11}{subsection.5.2}%
 \contentsline {section}{\numberline {6}Fazit}{12}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Verwendete Hilfsmittel}{12}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Technische Herausforderungen}{12}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Weitere Features}{12}{subsection.6.3}%
-\contentsline {section}{\numberline {A}Anhang}{13}{appendix.A}%
+\contentsline {subsection}{\numberline {6.1}Technische Herausforderungen}{12}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Weitere Features}{12}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Einverständniserklärung}{13}{section.7}%
 \contentsline {section}{\nonumberline Literatur}{I}{section*.11}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

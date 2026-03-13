@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  13 MAR 2026 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  13 MAR 2026 22:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1356,12 +1356,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 266--272
 
  []
 
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png, id=134, 696.6025pt x 522.95375pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png, id=132, 696.6025pt x 522.95375pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png  used on input line 286.
 (pdftex.def)             Requested size: 199.1609pt x 142.26068pt.
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png, id=136, 801.99625pt x 441.65pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png, id=134, 801.99625pt x 441.65pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png  used on input line 292.
@@ -1372,18 +1372,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png, id=137, 695.59875pt x 520.94624pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png, id=135, 695.59875pt x 520.94624pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png  used on input line 301.
 (pdftex.def)             Requested size: 199.1605pt x 142.26306pt.
 [7]
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png, id=149, 251.94125pt x 218.8175pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png, id=147, 251.94125pt x 218.8175pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png  used on input line 313.
 (pdftex.def)             Requested size: 113.81076pt x 85.3585pt.
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png, id=150, 251.94125pt x 218.8175pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png, id=148, 251.94125pt x 218.8175pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png  used on input line 319.
@@ -1395,18 +1395,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png, id=151, 678.535pt x 114.4275pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png, id=149, 678.535pt x 114.4275pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png  used on input line 328.
 (pdftex.def)             Requested size: 341.43056pt x 56.90456pt.
 [8 </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png>]
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png, id=162, 710.655pt x 301.125pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png, id=160, 710.655pt x 301.125pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png  used on input line 337.
 (pdftex.def)             Requested size: 199.16638pt x 85.35744pt.
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png, id=163, 966.61125pt x 463.7325pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png, id=161, 966.61125pt x 463.7325pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png  used on input line 342.
@@ -1419,7 +1419,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 357--362
 [10
 
 ]
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png, id=188, 1449.415pt x 1533.73pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png, id=186, 1449.415pt x 1533.73pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png Graphic file (type png)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png>
 Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png  used on input line 406.
@@ -1427,68 +1427,66 @@ Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programm
  [11 </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png>] [12
 
 ]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 432.
- (/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/main.py)
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=201, 597.432pt x 845.07718pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=199, 597.432pt x 845.07718pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf  used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf  used on input line 438.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf  used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf  used on input line 438.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=204, page=1, 597.432pt x 845.07718pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=202, page=1, 597.432pt x 845.07718pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 1>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 438.
 (pdftex.def)             Requested size: 597.43054pt x 845.07512pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 1>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
  [13
 
 ]
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 1>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 1>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 1>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page1 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
  [14 </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf>]
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=226, page=2, 597.432pt x 845.07718pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=217, page=2, 597.432pt x 845.07718pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 2>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page2 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page2 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 2>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page2 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page2 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 2>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page2 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page2 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
  [15 </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf>]
-</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=235, page=3, 597.432pt x 845.07718pt>
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, id=226, page=3, 597.432pt x 845.07718pt>
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 3>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page3 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page3 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 3>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page3 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page3 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
 File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf Graphic file (type pdf)
 <use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf, page 3>
-Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page3 used on input line 434.
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf , page3 used on input line 438.
 (pdftex.def)             Requested size: 597.45789pt x 845.1138pt.
  [16 </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf>]
 No complaints by nag.
@@ -1502,18 +1500,18 @@ Package logreq Info: Writing requests to 'Vorlage.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33129 strings out of 476025
- 625621 string characters out of 5790017
+ 33106 strings out of 476025
+ 624891 string characters out of 5790017
  1921388 words of memory out of 5000000
- 52833 multiletter control sequences out of 15000+600000
- 573968 words of font info for 147 fonts, out of 8000000 for 9000
+ 52823 multiletter control sequences out of 15000+600000
+ 573647 words of font info for 146 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  122i,19n,120p,10696b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on Vorlage.pdf (19 pages, 1072174 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Vorlage.pdf (19 pages, 1050814 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
- 36617 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 295 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 36097 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -409,27 +409,31 @@ Der Programmablauf orientiert sich an der Bedienungsanleitung aus Kapitel \ref{s
 \end{figure}
 
 \clearpage
+
 % Kapitel 6
 \section{Fazit}\label{sec:Fazit}
-dummytext
+Im Rahmen dieses Beleges wurde ein Python-Programm zur Analyse von Bildmetadaten entwickelt. 
+\\Das Programm ermöglicht das Auslesen von EXIF-Daten aus Bild-Dateien.
+\\Durch die Verwendung der Bibliothek Pillow können verschiedene Bildformate analysiert werden. 
+Die grafische Benutzeroberfläche (GUI) erleichtert die Bedienung des Endnutzers und ermöglicht eine einfachere Auswahl von Bilddateien.
 
-\subsection{Verwendete Hilfsmittel}\label{subsec:Verwendete Hilfsmittel}
 
 \subsection{Technische Herausforderungen}\label{subsec:Technische Herausforderungen}
+Während der Entwicklung des Programms traten unterschiedliche Herausforderungen auf. 
+\\Eine Schwierigkeit bestand darin, die unterschiedlichen EXIF-Datenformate korrekt auszulesen und darzustellen.
+\\Unter anderem werden einige Metadaten in Form von Brüchen oder speziellen Datenstrukturen gespeichert. Diese mussten zu erst in ein `verständliches' Format umgewandelt werden.
+\\Eine weitere Herausforderung bestand darin, GPS-Daten korrekt zu interpretieren. Diese werden in der Regel als Grad-Minuten-Sekunden-Werte gespeichert 
+und mussten in Dezimalwerte umgerechnet werden, um eine verständliche Darstellung zu ermöglichen.
+\\Außerdem sollten verschiedene Bildformate berücksichtigt werden, da nicht alle Bilddateien dieselben Metadaten enthalten. Ein Beispiel hier 
+sind Telefon- und Spiegelreflexkamerafotos.
 
 \subsection{Weitere Features}\label{subsec:WeitereFeatures}
-Überprüfung, ob die EXIF-Inhalte verändert worden sind
+Ein weiteres Feature wäre die Überprüfung der EXIF-Inhalte auf Integrität. Dabei könnte überprüft werden, ob Metadaten nachträglich verändert wurden.
+\\Oder auch die Darstellung der GPS-Koordinaten auf einer Karte, sodass der Aufnahmeort eines Bildes visuell dargestellt werden kann.
 
 \clearpage
 
-\appendix
-\section{Anhang}
-
-\lstinputlisting[
-    caption={Python Main-Datei},
-    label={lst:metadaten_script},
-    basicstyle=\ttfamily\tiny
-]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/main.py}
+\section{Einverständniserklärung}
 
 \includepdf[pages=-, pagecommand=Einverständniserklärung]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf}
 \end{document}
