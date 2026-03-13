@@ -20,6 +20,6 @@
 \contentsline {section}{\numberline {6}Fazit}{12}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Technische Herausforderungen}{12}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Weitere Features}{12}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Einverständniserklärung}{13}{section.7}%
+\contentsline {section}{\numberline {7}Selbstständigkeitserklärung}{13}{section.7}%
 \contentsline {section}{\nonumberline Literatur}{I}{section*.11}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

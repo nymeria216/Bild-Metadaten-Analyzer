@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Vorlage"] 1773432219 "Vorlage.bcf" "Vorlage.bbl" "Vorlage" 1773436817 0
+["biber Vorlage"] 1773432219 "Vorlage.bcf" "Vorlage.bbl" "Vorlage" 1773437402 0
   "./literatur.bib" 1773427028 1528 5cfa0dfd7d942eef5eedf2cd37e1620c ""
-  "Vorlage.bcf" 1773436817 107287 df848c65b853cbb2a0446906041bec3b "pdflatex"
+  "Vorlage.bcf" 1773437402 107287 df848c65b853cbb2a0446906041bec3b "pdflatex"
   (generated)
   "Vorlage.bbl"
   "Vorlage.blg"
   (rewritten before read)
-["pdflatex"] 1773436814 "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" "Vorlage.pdf" "Vorlage" 1773436817 0
-  "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" 1773436812 23908 369fba9e304f5f9a413b1b9cfbb7beb7 ""
+["pdflatex"] 1773437400 "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" "Vorlage.pdf" "Vorlage" 1773437402 0
+  "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" 1773437399 23903 011b71d90095d2fe15169cccd8b57ea4 ""
   "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png" 1773426283 60638 d4fc2082aa82cd9870f1cc14b2218aa4 ""
   "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png" 1773426360 188189 25370a10ebe1fc6481d2838a887f94a3 ""
   "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png" 1773426400 133714 f547a009cdac08d005a1a8e1ab9a3e48 ""
@@ -17,7 +17,7 @@
   "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png" 1773426481 130284 6b2f3f7917c207ceb6a4a508667745b4 ""
   "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png" 1773426602 280714 c8d225ce095304565ac3d27a232a344d ""
   "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png" 1773432045 201238 85eab1b56526000f7db4c95ea2d7b790 ""
-  "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf" 1773431118 40162 e70ff5a8796d6e15b41cdc790fafabda ""
+  "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Selbstständigkeitserklärung.pdf" 1773437216 26278 051c745d3801f5b8a5e128d5cc3e1ec9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1254269338 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -215,12 +215,12 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696452066 7883456 e8cf1c8a7b77559f80969a45d2b3531e ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Bild-Metadaten-Analyzer.cls" 1773427028 7202 9ba6db1e8b2a736814a725de92378c65 ""
-  "Vorlage.aux" 1773436817 13444 646bd084c6ff2419efd774f471452258 "pdflatex"
+  "Vorlage.aux" 1773437402 13488 bd265f85bcb0a690dd333e040ed93ef2 "pdflatex"
   "Vorlage.bbl" 1773432221 1886 3bf3b31818cf1564c69f555b4d7e0fb8 "biber Vorlage"
-  "Vorlage.out" 1773436815 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Vorlage.run.xml" 1773436817 2517 11f529c86ae4e3c087c603480df0f7cc "pdflatex"
-  "Vorlage.tex" 1773436812 23908 369fba9e304f5f9a413b1b9cfbb7beb7 ""
-  "Vorlage.toc" 1773436817 1908 2693bbdf9de1a6fae90a8f8a99aaa890 "pdflatex"
+  "Vorlage.out" 1773437401 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Vorlage.run.xml" 1773437402 2517 11f529c86ae4e3c087c603480df0f7cc "pdflatex"
+  "Vorlage.tex" 1773437399 23903 011b71d90095d2fe15169cccd8b57ea4 ""
+  "Vorlage.toc" 1773437402 1912 c56763512c9535e9f5d9a27b14abdf26 "pdflatex"
   "hsmwLogo.pdf" 1773427028 10251 0c9cc1d989c9b9c5554606ce7d3f9c02 ""
   (generated)
   "Vorlage.aux"
