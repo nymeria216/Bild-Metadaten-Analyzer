@@ -41,6 +41,7 @@
 % Verwendete Literatur bitte in diese Datei eintragen
 \addbibresource{literatur.bib} % Name der Literatur-Datei
 \usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage{pdfpages}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Code-Formatierung
@@ -349,22 +350,66 @@ Die csv-Datei öffnet sich automatisch mit Excel. Die json-Datei öffnet sich au
 \section{Programmaufbau}
 
 \subsection{Vorstellung Quellcode-Dateien}\label{subsec:Vorstellung Quellcode-Dateien}
-dummytext
+Das Programm ist in vier Python Quellcode-Dateien aufgeteilt, wobei jede Datei eine individuelle Rolle einnimmt. Durch diese 
+Struktur wird eine klare Trennung zwischen Benutzeroberfläche, Datenverarbeitung und Datenexport erreicht.
 
-\subsubsection{Software-Architektur}\label{subsubsec:Software-Architektur}
+\subsubsection{main.py}\label{subsubsec:main.py}
+Die Hauptdatei des Programms ist die \textit{main.py}. In dieser Datei befindet sich ausschließlich der Programmstart.
+Diese Datei ruft die Funktion \textit{starte\_app} auf, welche sich in der \textit{metadaten.py}-Datei befindet.
+\\Zu beachten hierbei ist, dass in der \textit{main.py} die Datei \textit{metadaten.py} erwähnt wird. Ansonsten lassen 
+sich die Funktionen nicht verwenden.\\
+\\Aufbau der \textit{main.py}:
+\begin{lstlisting}[style=pythonstyle]
+from metadaten import starte_app
 
-\subsection{Funktionsumfang}\label{subsec:Funktionsumfang}
+if __name__ == "__main__":
+    starte_app()
+\end{lstlisting}
 
+\subsubsection{export.py}\label{subsubsec:export.py}
+Die Datei \textit{export.py} ist für den Export der Metadaten verantwortlich. Die ausgelesenen Informationen können hier als CSV- 
+oder JSON-Datei gespeichert werden.
+\\Folgende Funktionen sind nochmal genauer beschrieben:
 \begin{itemize}
-	\item 
-	\item 
-	\item
+    \item \textit{als\_csv\_exportieren}: Exportiert die Metadaten bzw. EXIF-Daten in eine CSV-Datei.
+    \item \textit{als\_json\_exportieren}: Speichert die Metadaten in einer JSON-Datei.
+\end{itemize}
+
+\subsubsection{metadaten.py}\label{subsubsec:metadaten.py}
+Die Datei \textit{metadaten.py} beinhaltet enthält Funktionen zur Nutzung der GUI, 
+als auch zur Verarbeitung von Benutzereingaben. Dazu gehören unter Anderem das Öffnen von Bilddateien, das Anzeigen der Metadaten 
+oder das Speichern der Daten in verschiedenen Formaten.
+\\Folgende Funktionen sind nochmal genauer beschrieben:
+\begin{itemize}
+    \item \textit{bild\_oeffnen}: Öffnet eine ausgewählte Bilddatei über das Startfeld und startet anschließend die Analyse der Metadaten.
+    \item \textit{metadaten\_text\_formatieren}: Formatiert die ausgelesenen Metadaten, sodass sie übersichtlich im Textfeld der Benutzeroberfläche angezeigt werden können.
+    \item \textit{datei\_wird\_unterstuetzt}: Überprüft, ob das ausgewählte Bildformat vom Programm unterstützt wird.
+    \item \textit{csv\_speichern}: Speichert die ausgelesenen Metadaten als CSV-Datei.
+    \item \textit{json\_speichern}: Speichert die ausgelesenen Metadaten als JSON-Datei.
+\end{itemize}
+
+\subsubsection{reader.py}\label{subsubsec:reader.py}
+In der Datei \textit{reader.py} befindet sich die eigentliche Logik zum Auslesen der Bildmetadaten. Mithilfe der Bibliothek Pillow 
+werden EXIF-Daten aus den Bilddateien extrahiert und in einer strukturierten Form gespeichert.
+\\Folgende Funktionen sind nochmal genauer beschrieben:
+\begin{itemize}
+    \item \textit{bild\_metadaten\_auslesen}: Öffnet eine Bilddatei und extrahiert relevante Metadaten wie Aufnahmedatum, Kamerahersteller, Kameramodell, Blende, Belichtungszeit, ISO-Wert und Brennweite.
+    \item \textit{gps\_daten\_auslesen}: Liest vorhandene GPS-Daten aus den EXIF-Metadaten und berechnet daraus die geografischen Koordinaten.
+    \item \textit{grad\_umrechnen}: Wandelt GPS-Koordinaten aus Grad-Minuten-Sekunden in Dezimalgrad um.
 \end{itemize}
 
 \subsection{Programmablauf}\label{subsec:Programmablauf}
+Der Programmablauf orientiert sich an der Bedienungsanleitung aus Kapitel \ref{subsec:Bedienungsanleitung} \nameref{subsec:Bedienungsanleitung}. 
 
-dummytext
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=8cm, height=10cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/Diagram.png}
+    \caption{Klassendiagramm des Programms \textit{Bild-Metadaten-Analyzer}}
+    \label{fig:Diagramm}
+\end{figure}
 
+\clearpage
+% Kapitel 6
 \section{Fazit}\label{sec:Fazit}
 dummytext
 
@@ -375,4 +420,16 @@ dummytext
 \subsection{Weitere Features}\label{subsec:WeitereFeatures}
 Überprüfung, ob die EXIF-Inhalte verändert worden sind
 
+\clearpage
+
+\appendix
+\section{Anhang}
+
+\lstinputlisting[
+    caption={Python Main-Datei},
+    label={lst:metadaten_script},
+    basicstyle=\ttfamily\tiny
+]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/main.py}
+
+\includepdf[pages=-, pagecommand=Einverständniserklärung]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/metadaten.txt.pdf}
 \end{document}
