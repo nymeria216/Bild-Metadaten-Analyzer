@@ -1,0 +1,305 @@
+% !TeX document-id = {20f24222-124f-4838-bced-b9cdf90be1c4}
+% !TeX encoding = UTF-8
+% !TeX spellcheck = de_DE
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beschreibung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mit der folgenden Reihenfolge kompilieren, um alle Abhängigkeiten aufzulösen:
+% 1) pdflatex
+% 2) biber
+% 3) pdflatex
+% 4) pdflatex
+
+% Die Datei "Bild-Metadaten-Analyzer.cls", "hsmwLogo.pdf" und "literatur.bib" müssen in einem Verzeichnis mit dieser Datei liegen.
+% Ändern Sie die Datei "Bild-Metadaten-Analyzer.cls" bitte nicht, wenn nicht unbedingt notwendig!
+% Die Datei "literatur.bib" beinhaltet Ihr Literaturverzeichnis und sollte dringend bearbeitet werden!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{Bild-Metadaten-Analyzer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Konfigurationsbereich (wichtige Werte!)
+% Bitte anpassen, sonst kompiliert das Dokument nicht!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\Anrede{Frau}
+\Vorname{Melissa}
+\Nachname{Futtig}
+
+\Matrikelnummer{107813}
+\Seminargruppe{CC24w1-B}
+
+% Betriebssysteme und digitale Spuren
+% Netzwerkforensik
+\Modulbezeichnung{Programmierung II} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Literaturverwaltung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Verwendete Literatur bitte in diese Datei eintragen
+\addbibresource{literatur.bib} % Name der Literatur-Datei
+\usepackage[backend=biber,style=ieee]{biblatex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Code-Formatierung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    backgroundcolor=\color{gray!7},
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red!70!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=8pt,
+    frame=single,
+    tabsize=4,
+    breaklines=true
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dokument-Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Kapitel 1
+\section{Einleitung}\label{sec:Einleitung}
+Die vorliegende Belegarbeit wird im Rahmen des Moduls ``Programmierung II`` des Studiengangs ``Bachelor of Science in IT-Forensik/ 
+Cybercrime``, der Seminargruppe CC24w1-B, an der Hochschule Mittweida erstellt.\\
+Dabei soll ein freigewähltes Programm in der Programmiersprache Python geschrieben werden, das sich erfolgreich implementieren und 
+kompilieren lässt. Dieses trägt den Namen \textit{Bild-Metadaten-Analyzer}. In folgender \nameref{sec:Aufgabenstellung}
+werden die Kriterien und Anforderungen an das Programm beschrieben. Im \nameref{sec:Ziel des Programms} aus Kapitel 
+\Ref{sec:Ziel des Programms} werden die Programminhalte näher betrachtet.
+\clearpage
+
+% Kapitel 2
+\section{Aufgabenstellung}\label{sec:Aufgabenstellung}
+Das Programm sollte \ldots \\
+\\\ldots in der Programmiersprache Python geschrieben sein.
+\\\ldots mit einer Schnittstelle (GUI oder CLI) ausgestattet sein.
+\\\ldots Inhalte verarbeiten und ausgeben können.
+\\\ldots sich erfolgreich implementieren und kompilieren lassen.
+\\\ldots plattformübergreifend laufend sein (Windows und Linux).
+\\\ldots ohne kostenpflichtige Software oder Bibliothekne auskommen.
+\\\ldots Quellcode mit beschreibenden Kommentaren enthalten.
+\\\ldots gegebenenfalls Dateien enthalten, die zu Testzwecken genutzt werden können.\\
+\\ Durch die freie Themenwahl gab es eine Vielzahl an Möglichkeiten, passende Programme zu erstellen. Damit dieses einen Bezug zum 
+Studiengang hat, sollte es IT-forensische Inhalte beinhalten. So wurde sich für das Programm \textit{Bild-Metadaten-Analyzer} 
+entschieden, das die Metadaten von Bildern analysieren und ausgeben kann. Es soll dabei helfen, Informationen über die Bilder zu 
+erhalten, die für die IT-Forensik relevant sein können.
+\clearpage
+
+% Kapitel 3
+\section{Ziel des Programms}\label{sec:Ziel des Programms}
+Damit das Programm \textit{Bild-Metadaten-Analyzer} neben den Anforderungen aus der \nameref{sec:Aufgabenstellung} erfolgreich läuft,
+sind weitere Kriterien festegelegt worden.
+\\Unter anderem soll es \ldots\\
+\\\ldots eine forensische Analyse von Bilddateien (*.jpeg, *.jpg, *.png, *.tif, und *.tiff) durchführen können.
+\\\ldots die ausgelesenen Metadaten bzw. EXIF-Daten übersichtlich darstellen können.
+\\\ldots über eine graphische Oberfläche (GUI), als benutzerfreundliche Schnittstelle, erreichbar sein.
+\\\ldots die gefundenen Metadaten in einer \textit{*.csv-Datei} oder in einer \textit{*.json-Datei} extrahieren können.\\
+\\EXIF-Daten sind Metadaten, die in Bilddateien enthalten sind. EXIF ist ein Akronym und steht für Exchangeable Image File Format.
+``Dieses Dateiformat ist ein Standardformat und wird zum Speichern von Metadaten in digitalen Bildern verwendet. 
+Diese Metadaten enthalten Informationen über das Bild, etwa die Einstellungen der Kamera wie Belichtungszeit, Blende und ISO-Wert. 
+Aber auch Daten wie Datum, Uhrzeit und verwendete Kamera bei der Aufnahme. Wenn die Kamera mit einem GPS-System ausgestattet ist, 
+können sogar die geografische Daten in den EXIF-Daten gespeichert sein.`` \cite{Onlinequelle:1}
+\subsection{EXIF-Inhalte}\label{subsec:EXIF-Inhalte}
+Wie in der Definition zu EXIF-Daten aus der Quelle \cite[E. M. Zylinski. „Was sind EXIF-Daten?“]{Onlinequelle:1}, werden in dem 
+Programm \textit{Bild-Metadaten-Analyzer} die folgenden EXIF-Inhalte ausgelesen und dargestellt \ldots
+\\\ldots Dateipfad mit Dateinamen,
+\\\ldots Dateigröße,
+\\\ldots Aufnahmedatum und -uhrzeit,
+\\\ldots Kamerahersteller,
+\\\ldots Kameramodell,
+\\\ldots Objektiv,
+\\\ldots Software,
+\\\ldots Blende,
+\\\ldots Belichtungszeit,
+\\\ldots ISO-Wert,
+\\\ldots Brennweite,
+\\\ldots GPS-Daten.\\
+\\Wenn EXIF-Daten nicht vorhanden sind, soll eine spezifische Fehlermeldung bzw. Information ausgegeben werden, sodass der Nutzer 
+informiert ist, dass für das Bild keine EXIF-Daten vorliegen.
+
+\subsection{Einsatzzweck}\label{subsec:Einsatzzweck}
+Der sogenannte \textit{Bild-Metadaten-Analyzer} kann in der IT-Forensik von Nutzung sein, um Ermittlern der Polizei oder weiteren
+nachrichtendienstlichen Behörden Informationen über Bilder zu liefern, die in einem Ermittlungsverfahren von Relevanz sein könnten.
+\\Ein Anwendungsbeispiel hierbei wären Bilder, die einen Zeitstempel mit GPS-Daten enthalten. Solche könnten unterstützend wirken, 
+um potentielle Täter oder Opfer eines Tatortes leichter zu identifizieren.
+\clearpage
+
+% Kapitel 4
+\section{Anleitungen}\label{sec:Anleitungen}
+In den folgenden Anleitungen (\nameref{subsec:Installationsanleitung}, \nameref{subsec:Konfigurationsanleitung} und 
+\nameref{subsec:Bedienungsanleitung}) werden die Installation, Konfiguration und Bedienung des Programms 
+\textit{Bild-Metadaten-Analyzer} beschrieben.
+
+\subsection{Installationsanleitung}\label{subsec:Installationsanleitung}
+Die Installationsanleitung enthält technische Voraussetzungen für die Installation auf einem MacOS, Windows oder Linux Betriebssystem. 
+Es wird darauf eingegangen, wie das Programm zum ``Laufen'' gebracht wird.
+
+\textbf{Technische Voraussetzungen:}
+\begin{itemize}
+	\item Python 3.10
+	\item Betriebssystem: Windows 10/11, MacOS 10.15 oder höher, Linux (Ubuntu 20.04 oder höher)
+	\item Mindestens 4 GB RAM
+	\item Mindestens 100 MB freier Festplattenspeicher
+\end{itemize}
+
+\textit{Hinweis:} Das Programm wurde ausschließlich auf den oben genannten Betriebssystemen getestet und für die Entwicklung 
+ein MacBook Pro mit MacOS 15.5 verwendet.
+
+Um Python zu installieren, kann etweder die offizielle \href{https://www.python.org/downloads/}{Python-Webseite} besucht  
+oder folgende Schritte aus Kapitel \ref{subsubsec:Installation von Bibliotheken} \nameref{subsubsec:Installation von Bibliotheken} 
+durchlaufen werden.
+
+\textbf{Benötigte Bibliotheken:}
+\begin{itemize}
+	\item Pillow (für die Bildverarbeitung bzw. die Bildübertragungsprozesse)
+	\item Tkinter (für die GUI-Entwicklung und ist oft in der Python-Standardbibliothek enthalten)
+\end{itemize}
+
+\textbf{Standardbibliotheken}\\
+Folgende Standardbibliotheken werden für die Entwicklung für das Programm \textit{Bild-Metadaten-Analyzer} verwendet, kommen 
+jedoch mit der Installation von Python (siehe Kapitel \ref{subsubsec:Installation von Bibliotheken} \nameref{subsubsec:Installation von Bibliotheken})einher:
+\begin{itemize}
+	\item JSON: für die Verarbeitung von JSON-Daten --> zum Speichern von Dateien im JSON-Format
+	\item CSV: für die Verarbeitung von CSV-Daten --> zum Speichern von Dateien im CSV-Format
+\end{itemize}
+\subsubsection{Installation von Bibliotheken}\label{subsubsec:Installation von Bibliotheken}
+
+\textbf{Installation auf Windows:}\\
+\\\textit{Python}\\
+Für die Installation von Python auf einem Windows-Betriebssystem wurde die Dokumentation von 
+\href{https://docs.python.org/3.10//using/windows.html}{Python} selbst genutzt. Die einzelnen Schritte werden hier nicht näher 
+beschrieben, um den Rahmen der Belegarbeit nicht auszureizen.
+
+\textit{TKinter}\\
+Die Installation von TKinter unter Windows erfordert Python 3.10 oder höher als Vorinstallation. Diese Bibliothek lässt sich über 
+die Windows Eingabeaufforderung (CMD) mit folgendem Befehl installatieren:
+\begin{lstlisting}[style=pythonstyle]
+pip install python-tk
+\end{lstlisting}
+
+\textit{Pillow}\\
+Die Installation von Pillow unter Windows erfordert Python 3.10 oder höher als Vorinstallation. Diese Bibliothek lässt sich über 
+die Windows Eingabeaufforderung (CMD) mit folgendem Befehl installatieren:
+\begin{lstlisting}[style=pythonstyle]
+pip install pillow
+\end{lstlisting}
+
+\textit{Hinweis:} Für den Fall, dass `pip' nicht erkannt wird, kann auch `pip3' verwendet werden.\\
+
+\textbf{Installation auf Linux:}\\
+\\\textit{Python}\\
+Für die Installation von Python auf einem Linux-Betriebssystem wurde sich an der Dokumentation von 
+\href{https://computingforgeeks.com/how-to-install-python-on-ubuntu-linux-system/}{Computing for Geeks} für ein Ubuntu 20.04 und 
+höher orientiert. Die Installation erfolgt nicht über die GUI, sondern die Kommandozeile (Terminal).\\
+\\Mit folgenden Befehelen kann Python installiert werden:
+
+\begin{lstlisting}[style=pythonstyle]
+sudo apt install software-properties-common -y
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+sudo apt install python3.10
+\end{lstlisting}
+
+Mit folgendem Befehl erfolgt die Überprüfung, ob Python erfolgreich installiert wurde:
+\begin{lstlisting}[style=pythonstyle]
+python3.10 --version
+\end{lstlisting}
+\textit{Hinweis:} Wenn Befehle mit `sudo' ausgeführt werden, sollte das Passwort des Benutzers bereitgehalten und eingegeben werden.\\
+
+\textit{TKinter}\\
+Die Installation von TKinter unter Linux erfordert Python 3.10 oder höher als Vorinstallation. Diese Bibliothek lässt sich über 
+das Linux Terminal mit folgendem Befehl installatieren:
+\begin{lstlisting}[style=pythonstyle]
+sudo apt install python3-tk
+\end{lstlisting}
+
+\textit{Pillow}\\
+Die Installation von Pillow unter Linux erfordert Python 3.10 oder höher als Vorinstallation. Diese Bibliothek lässt sich über 
+das Linux Terminal mit folgendem Befehl installatieren:
+\begin{lstlisting}[style=pythonstyle]
+sudo apt install pillow
+\end{lstlisting}
+oder auch \\
+\begin{lstlisting}[style=pythonstyle]
+pip install pillow
+\end{lstlisting}
+
+\subsection{Konfigurationsanleitung}\label{subsec:Konfigurationsanleitung}
+Die Konfigurationsanleitung beschreibt welche Einstellungen als Nutzer selbst vorgenommen werden könnten. Als mögliche Einstellungen 
+werden unter anderem die Bildformate betrachtet, die ausschließlich analysiert werden können. Dabei handelt es sich um die Formate, 
+welche bereits in Kapitel \ref{sec:Ziel des Programms} \nameref{sec:Ziel des Programms} gelistet wurden.\\
+
+Des Weiteren hat der Nutzer die Wahl, ob die ausgelesenen Metadaten als \textit{*.csv-Datei} oder als \textit{*.json-Datei} 
+extrahiert werden sollen. Der Speicherort kann hierbei \textbf{nicht} frei gewählt werden und ist im Programm-Code festgelegt und 
+befindet sich \textbf{immer} im DOWNLOADS-Ordner eines jeden Systems.\\
+
+Zusätzlich ist die Namensgebung der extrahierten Dateien festgelegt. Die Dateien behalten ihren ursprünglichen Dateinamen, jedoch 
+mit der Endung \textit{*\_Metadata\_Auswertung.json} oder \textit{*\_Metadata\_Auswertung.csv}, je nachdem, für welches Format sich der 
+Nutzer entscheidet.\\
+
+Die Ausgabe der Sprache lässt sich nicht verändern. Die Originalsprache des Systems der Bilder ist englisch und wird in das Deutsche 
+übersetzt.
+
+\subsection{Bedienungsanleitung}\label{subsec:Bedienungsanleitung}
+In wenigen Schritten ist es einem Endnutzer diesen Programmes möglich dieses auszuführen.\\
+\\\textbf{Schritt 1:}
+\\Das Programm \textit{Bild-Metadaten-Analyzer} wird über die ausführbare Datei \textit{main.py} gestartet. Ein Weg wäre es  
+über die Eingabeaufforderung (CMD) unter Windows oder über das Terminal unter Linux auszuführen ODER über eine Intelligente 
+Entwicklungsumgebung (IDE) wie zum Beispiel IntelliJ oder Visual Studio Code.\\
+\\Gestartet wird das Programm mit folgendem Befehl:
+\begin{lstlisting}[style=pythonstyle]
+python main.py
+\end{lstlisting}
+\textit{Alternativ auch mit:}
+\begin{lstlisting}[style=pythonstyle]
+python3 main.py
+\end{lstlisting}
+
+\textbf{Schritt 2:}\\
+Nach dem Starten des Programms öffnet sich die graphische Oberfläche (GUI) des Programms. Es erscheint ein Fenster, in dem der 
+Endnutzer auswählen kann, welche Bilddatei betrachtet werden soll. Alle Dateien, die nicht kompatibel sind, werden automatisch 
+ausgegraut, sodass eine Auswahl dieser nicht erfolgen kann.
+\section{Programmaufbau}
+
+\subsection{Vorstellung Quellcode-Dateien}\label{subsec:Vorstellung Quellcode-Dateien}
+dummytext
+
+\subsubsection{Software-Architektur}\label{subsubsec:Software-Architektur}
+
+\subsection{Funktionsumfang}\label{subsec:Funktionsumfang}
+
+\begin{itemize}
+	\item 
+	\item 
+	\item
+\end{itemize}
+
+\subsection{Programmablauf}\label{subsec:Programmablauf}
+
+dummytext
+
+\section{Fazit}\label{sec:Fazit}
+dummytext
+
+\subsection{Verwendete Hilfsmittel}\label{subsec:Verwendete Hilfsmittel}
+
+\subsection{Technische Herausforderungen}\label{subsec:Technische Herausforderungen}
+
+\subsection{Weitere Features}\label{subsec:WeitereFeatures}
+Überprüfung, ob die EXIF-Inhalte verändert worden sind
+
+\end{document}

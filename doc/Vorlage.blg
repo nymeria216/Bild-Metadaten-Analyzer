@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Vorlage.blg'
+[34] biber-darwin:340> INFO - === Fri Mar 13, 2026, 19:17:13
+[41] Biber.pm:419> INFO - Reading 'Vorlage.bcf'
+[82] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[90] Biber.pm:4419> INFO - Processing section 0
+[95] Biber.pm:4610> INFO - Looking for bibtex file 'literatur.bib' for section 0
+[108] bibtex.pm:1713> INFO - LaTeX decoding ...
+[110] bibtex.pm:1519> INFO - Found BibTeX data source 'literatur.bib'
+[127] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[127] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[127] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[127] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[131] bbl.pm:660> INFO - Writing 'Vorlage.bbl' with encoding 'UTF-8'
+[131] bbl.pm:763> INFO - Output to Vorlage.bbl
