@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  13 MAR 2026 19:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.4)  13 MAR 2026 20:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -984,50 +984,58 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count480
+\float@exts=\toks34
+\float@box=\box109
+\@float@everytoks=\toks35
+\@floatcapt=\box110
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 72.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (./Vorlage.aux)
 \openout1 = `Vorlage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-Package nag Info: Command \frontmatter not defined, skipping amendment on input line 72.
-Package nag Info: Command \mainmatter not defined, skipping amendment on input line 72.
-Package nag Info: Command \backmatter not defined, skipping amendment on input line 72.
-LaTeX Info: Redefining \microtypecontext on input line 72.
-Package microtype Info: Applying patch `item' on input line 72.
-Package microtype Info: Applying patch `toc' on input line 72.
-Package microtype Info: Applying patch `eqnum' on input line 72.
-Package microtype Info: Applying patch `footnote' on input line 72.
-Package microtype Info: Applying patch `verbatim' on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+Package nag Info: Command \frontmatter not defined, skipping amendment on input line 79.
+Package nag Info: Command \mainmatter not defined, skipping amendment on input line 79.
+Package nag Info: Command \backmatter not defined, skipping amendment on input line 79.
+LaTeX Info: Redefining \microtypecontext on input line 79.
+Package microtype Info: Applying patch `item' on input line 79.
+Package microtype Info: Applying patch `toc' on input line 79.
+Package microtype Info: Applying patch `eqnum' on input line 79.
+Package microtype Info: Applying patch `footnote' on input line 79.
+Package microtype Info: Applying patch `verbatim' on input line 79.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 72.
+LaTeX Info: Redefining \showhyphens on input line 79.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1062,8 +1070,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Vorlage.bbl' found.
  (./Vorlage.bbl)
-Package biblatex Info: Reference section=0 on input line 72.
-Package biblatex Info: Reference segment=0 on input line 72.
+Package biblatex Info: Reference section=0 on input line 79.
+Package biblatex Info: Reference segment=0 on input line 79.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1100,29 +1108,30 @@ Package biblatex Info: Reference segment=0 on input line 72.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count480
+\scratchcounter=\count481
 \scratchdimen=\dimen276
-\scratchbox=\box109
-\nofMPsegments=\count481
-\nofMParguments=\count482
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count483
+\scratchbox=\box111
+\nofMPsegments=\count482
+\nofMParguments=\count483
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count484
 \MPscratchDim=\dimen277
-\MPnumerator=\count484
-\makeMPintoPDFobject=\count485
-\everyMPtoPDFconversion=\toks35
+\MPnumerator=\count485
+\makeMPintoPDFobject=\count486
+\everyMPtoPDFconversion=\toks37
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 79.
  (./Vorlage.out) (./Vorlage.out)
 \@outlinefile=\write4
 \openout4 = `Vorlage.out'.
@@ -1134,48 +1143,48 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 72.
+(scrartcl)           before \begin{document} on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count486
+\BKM@id=\count487
 ))
-Package hyperref Info: Option `pageanchor' set `false' on input line 72.
+Package hyperref Info: Option `pageanchor' set `false' on input line 79.
 <hsmwLogo.pdf, id=4, 356.59496pt x 112.92188pt>
 File: hsmwLogo.pdf Graphic file (type pdf)
 <use hsmwLogo.pdf>
-Package pdftex.def Info: hsmwLogo.pdf  used on input line 72.
+Package pdftex.def Info: hsmwLogo.pdf  used on input line 79.
 (pdftex.def)             Requested size: 159.33821pt x 50.45596pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 72.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 72.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 72.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 72.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 72.
+(Font)              <10.95> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 72.
+(Font)              <8> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 72.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 72.
+(Font)              <6> on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 72.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1183,8 +1192,8 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <./hsmwLogo.pdf>]
-Package hyperref Info: Option `pageanchor' set `true' on input line 72.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 72.
+Package hyperref Info: Option `pageanchor' set `true' on input line 79.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 79.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1192,7 +1201,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package tocbasic Info: character protrusion at toc deactivated on input line 72.
+Package tocbasic Info: character protrusion at toc deactivated on input line 79.
  (./Vorlage.toc)
 \tf@toc=\write5
 \openout5 = `Vorlage.toc'.
@@ -1200,46 +1209,46 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 72.
  [1
 
 ]
-\c@lstlisting=\count487
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 72.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 72.
+\c@lstlisting=\count488
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 79.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 79.
  [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 86--99
+Underfull \hbox (badness 10000) in paragraph at lines 93--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--99
+Underfull \hbox (badness 10000) in paragraph at lines 93--106
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 103--115
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--115
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--132
+Underfull \hbox (badness 10000) in paragraph at lines 123--139
 
  []
 
 [3
 
 ] [4]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 152.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 159.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 180--185
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 
  []
 
@@ -1248,7 +1257,7 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) [5
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 189.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 196.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1257,56 +1266,113 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--208
+Underfull \hbox (badness 10000) in paragraph at lines 209--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+Underfull \hbox (badness 10000) in paragraph at lines 249--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--249
+Underfull \hbox (badness 10000) in paragraph at lines 253--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--253
+Underfull \hbox (badness 10000) in paragraph at lines 257--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--264
+Underfull \hbox (badness 10000) in paragraph at lines 265--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--264
+Underfull \hbox (badness 10000) in paragraph at lines 265--271
 
  []
 
-[7] [8]
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png, id=128, 696.6025pt x 522.95375pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png  used on input line 285.
+(pdftex.def)             Requested size: 199.1609pt x 142.26068pt.
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png, id=130, 801.99625pt x 441.65pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png  used on input line 291.
+(pdftex.def)             Requested size: 256.08112pt x 142.26086pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png, id=131, 695.59875pt x 520.94624pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png  used on input line 300.
+(pdftex.def)             Requested size: 199.1605pt x 142.26306pt.
+[7]
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png, id=143, 251.94125pt x 218.8175pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png  used on input line 312.
+(pdftex.def)             Requested size: 113.81076pt x 85.3585pt.
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png, id=144, 251.94125pt x 218.8175pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png  used on input line 318.
+(pdftex.def)             Requested size: 113.81076pt x 85.3585pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png, id=145, 678.535pt x 114.4275pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png  used on input line 327.
+(pdftex.def)             Requested size: 341.43056pt x 56.90456pt.
+[8 </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png>]
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png, id=156, 710.655pt x 301.125pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png  used on input line 336.
+(pdftex.def)             Requested size: 199.16638pt x 85.35744pt.
+</Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png, id=157, 966.61125pt x 463.7325pt>
+File: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png Graphic file (type png)
+<use /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png>
+Package pdftex.def Info: /Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png  used on input line 341.
+(pdftex.def)             Requested size: 199.15955pt x 85.35753pt.
+ [9 </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png> </Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png>] [10
+
+]
 No complaints by nag.
 [1
 
@@ -1318,18 +1384,18 @@ Package logreq Info: Writing requests to 'Vorlage.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32076 strings out of 476025
- 598937 string characters out of 5790017
+ 32218 strings out of 476025
+ 606417 string characters out of 5790017
  1921388 words of memory out of 5000000
- 51882 multiletter control sequences out of 15000+600000
- 572322 words of font info for 134 fonts, out of 8000000 for 9000
+ 51995 multiletter control sequences out of 15000+600000
+ 572618 words of font info for 137 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  122i,19n,120p,10696b,2379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Vorlage.pdf (11 pages, 243423 bytes).
+Output written on Vorlage.pdf (13 pages, 890670 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 36006 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 36046 words of extra memory for PDF output out of 42996 (max. 10000000)
 

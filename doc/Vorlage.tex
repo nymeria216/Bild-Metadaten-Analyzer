@@ -66,6 +66,13 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Foto-Ordner
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graphicspath{{Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc}}
+\usepackage{float}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Dokument-Inhalt
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -273,6 +280,72 @@ python3 main.py
 Nach dem Starten des Programms öffnet sich die graphische Oberfläche (GUI) des Programms. Es erscheint ein Fenster, in dem der 
 Endnutzer auswählen kann, welche Bilddatei betrachtet werden soll. Alle Dateien, die nicht kompatibel sind, werden automatisch 
 ausgegraut, sodass eine Auswahl dieser nicht erfolgen kann.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm, height=5cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/00_Programm.png}
+    \caption{GUI des Programms \textit{Bild-Metadaten-Analyzer}}
+    \label{fig:00_Programm}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=9cm, height=5cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/01_Programm.png}
+    \caption{Auswahl des Bildes \textit{Bild-Metadaten-Analyzer}}
+    \label{fig:01_Programm}
+\end{figure}
+
+\textbf{Schritt 3:}\\
+Nachdem sich für eine Bilddatei entschieden wurde, liest das Programm die EXIF-Daten aus und präsentiert das Ergebnis dem Endnutzer. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm, height=5cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/02_Programm.png}
+    \caption{Ausgabe der vorhandenen Bild-Metdadaten}
+    \label{fig:02_Programm}
+\end{figure}
+
+\textbf{Schritt 4:}\\
+Im Anschluss hat der Endnutzer die Wahl, ob die ausgelesenen Metadaten in einer \textit{*.csv-Datei} oder in einer \textit{*.json-Datei} extrahiert werden sollen.
+Entscheidet der Endnutzer sich für eine *csv-Datei, so wird eine Datei mit der Endung \textit{*\_Metadata\_Auswertung.csv} im DOWNLOADS-Ordner des Systems erstellt. 
+Entscheidet er sich für eine *json-Datei, so wird eine Datei mit der Endung \textit{*\_Metadata\_Auswertung.json} im DOWNLOADS-Ordner des Systems erstellt.
+\\Nach der Extrahierung der Metadaten in entweder einer \textit{*.csv-Datei} oder einer \textit{*.json-Datei} wird eine Bestätigungsmeldung ausgegeben, dass die Datei erfolgreich erstellt wurde.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=4cm, height=3cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/03_Programm.png}
+    \caption{Speicherung als *.csv-Datei}
+    \label{fig:03_Programm}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=4cm, height=3cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/06_Programm.png}
+    \caption{Speicherung als *.json-Datei}
+    \label{fig:06_Programm}
+\end{figure}
+
+\textbf{Schritt 5:}\\
+Die Datei wurde im Downloads-Ordner des Systems abgelegt und kann dort eingesehen und geöffnet werden.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12cm, height=2cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/04_Programm.png}
+    \caption{csv-Datei im Downloads-Ordner}
+    \label{fig:04_Programm}
+\end{figure}
+
+\textbf{Schritt 6:}\\
+Die csv-Datei öffnet sich automatisch mit Excel. Die json-Datei öffnet sich automatisch mit dem Standard-Texteditor des Systems.
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=7cm, height=3cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/05_Programm.png}
+    \caption{csv-Datei geöffnet mit Excel}
+    \label{fig:05_Programm}
+    \vspace{0.5cm}
+    \centering
+    \includegraphics[width=7cm, height=3cm]{/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/img/img_doc/07_Programm.png}
+    \caption{json-Datei geöffnet mit Visual Studio Code}
+    \label{fig:07_Programm}
+\end{figure}
+
+\clearpage
+
+% Kapitel 5
 \section{Programmaufbau}
 
 \subsection{Vorstellung Quellcode-Dateien}\label{subsec:Vorstellung Quellcode-Dateien}
