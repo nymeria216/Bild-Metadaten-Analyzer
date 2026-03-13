@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Vorlage"] 1773412941 "Vorlage.bcf" "Vorlage.bbl" "Vorlage" 1773415032 0
+["biber Vorlage"] 0 "Vorlage.bcf" "Vorlage.bbl" "Vorlage" 1773416047 -1
   "./literatur.bib" 1773411108 1297 47f478c6ffdbf1814ea22a56eff81719 ""
-  "Vorlage.bcf" 1773415031 107149 a8573b115cc9eb942254e836cf311b28 "pdflatex"
+  "Vorlage.bcf" 1773416047 107149 a8573b115cc9eb942254e836cf311b28 "pdflatex"
   (generated)
   "Vorlage.bbl"
   "Vorlage.blg"
   (rewritten before read)
-["pdflatex"] 1773415030 "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" "Vorlage.pdf" "Vorlage" 1773415032 0
-  "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" 1773415030 4317 1c628de3e808225a610d75bfbffcb83c ""
+["pdflatex"] 1773416046 "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" "Vorlage.pdf" "Vorlage" 1773416047 0
+  "/Volumes/HSMW_MacOS/Programmierung/3._Semester/Programmierung_II/Bild-Metadaten-Analyzer/doc/Vorlage.tex" 1773416044 5230 220a325df02090350d40d20d043d1798 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1254269338 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc" 1254269338 3031 6c4d3515bf7115d8518af1c9ab97ca44 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -189,12 +189,12 @@
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1696452066 7883456 e8cf1c8a7b77559f80969a45d2b3531e ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
   "Bild-Metadaten-Analyzer.cls" 1773413905 7202 9ba6db1e8b2a736814a725de92378c65 ""
-  "Vorlage.aux" 1773415031 8418 70dc75b89ce8dff2dea0b89a6fcbc9f3 "pdflatex"
-  "Vorlage.bbl" 1773412944 466 ee04f40f768daeed26442158e95aba61 "biber Vorlage"
-  "Vorlage.out" 1773415031 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Vorlage.run.xml" 1773415031 2517 11f529c86ae4e3c087c603480df0f7cc "pdflatex"
-  "Vorlage.tex" 1773415030 4317 1c628de3e808225a610d75bfbffcb83c ""
-  "Vorlage.toc" 1773415031 1409 736c5ce2f42710aed05ae5f2ebc0a035 "pdflatex"
+  "Vorlage.aux" 1773416047 8415 d193c11b8f2fd8c00b04a90978e48626 "pdflatex"
+  "Vorlage.bbl" 1773415552 466 ee04f40f768daeed26442158e95aba61 "biber Vorlage"
+  "Vorlage.out" 1773416047 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Vorlage.run.xml" 1773416047 2517 11f529c86ae4e3c087c603480df0f7cc "pdflatex"
+  "Vorlage.tex" 1773416044 5230 220a325df02090350d40d20d043d1798 ""
+  "Vorlage.toc" 1773416047 1409 058a836a956fee4b6d53f81d326f318b "pdflatex"
   "hsmwLogo.pdf" 1773411108 10251 0c9cc1d989c9b9c5554606ce7d3f9c02 ""
   (generated)
   "Vorlage.aux"
